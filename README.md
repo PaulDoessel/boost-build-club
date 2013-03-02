@@ -29,6 +29,8 @@ and clean boost build something achievable by us all!
 
 Usage
 -----
+First, copy the contents of this directory into your boost source root, the same directory
+that contains boost's bootstrap scripts. cd into that directory, and then:
 
 - For OSX/iOS, run ./build-darwin.sh
 - For Windows, run build-win-shared.bat or build-win-static.bat
