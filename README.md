@@ -1,5 +1,5 @@
-boost-build-club is for people who can build boost!
----------------------------------------------------
+boost-build-club is for people who need to build boost!
+-------------------------------------------------------
 
 Boost is built using a proprietary build system called bjam. The documentation for the
 system is written in the classic mold of telling you everything, yet nothing at the same 
@@ -20,7 +20,7 @@ generates all of the libraries in a consistent way.
 Where you come in!
 ------------------
 
-boost-build-club is for people who can build boost, and if you found this page, 
+boost-build-club is for people who build boost successfully, and if you found this page, 
 hopefully that will soon include you. At the moment, these scripts work for me, and
 ideally you can bring your own experience to the table and help improve these scripts.
 
