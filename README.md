@@ -32,6 +32,14 @@ Usage
 First, copy the contents of this directory into your boost source root, the same directory
 that contains boost's bootstrap scripts. cd into that directory, and then:
 
-- For OSX/iOS, run ./build-iOS.sh or ./build-OSX.sh
+- For OSX/iOS, run ./build-iOS.sh or ./build-OSX.sh - these will create static versions of
+  the libraries.
 - For Windows, run build-win-shared.bat or build-win-static.bat
 - For other platforms, please send me a pull request!
+
+OSX Notes
+---------
+Mavericks comes with a partially built boost, but many libraries are missing. The 
+version in /usr/local/lib is 1.51.0, so if you get the 1.51 tarball from boost.org
+and build it, you can simply add the missing libraries to /usr/local/lib. The header
+suite Mavericks installs by default is complete.
