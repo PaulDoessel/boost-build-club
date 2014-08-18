@@ -37,9 +37,4 @@ that contains boost's bootstrap scripts. cd into that directory, and then:
 - For Windows, run build-win-shared.bat or build-win-static.bat
 - For other platforms, please send me a pull request!
 
-OSX Notes
----------
-Mavericks comes with a partially built boost, but many libraries are missing. The 
-version in /usr/local/lib is 1.51.0, so if you get the 1.51 tarball from boost.org
-and build it, you can simply add the missing libraries to /usr/local/lib. The header
-suite Mavericks installs by default is complete.
+
