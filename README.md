@@ -37,4 +37,9 @@ that contains boost's bootstrap scripts. cd into that directory, and then:
 - For Windows, run build-win-shared.bat or build-win-static.bat
 - For other platforms, please send me a pull request!
 
+Acknowledgements
+----------------
+Some points borrowed from Pete Goodliffe's original build script,
+some corrections borrowed from this gist -
+https://gist.github.com/faithfracture/c629ae4c7168216a9856
 

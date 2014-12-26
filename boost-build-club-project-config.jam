@@ -99,7 +99,7 @@ using msvc ;
 # OSX configuration.
 # ---------------------
 
-using darwin :
+using darwin : ${OSX_SDKVERSION}
    : /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fvisibility=hidden -fvisibility-inlines-hidden -std=c++11 -stdlib=libc++ 
    ;
 
@@ -107,12 +107,12 @@ using darwin :
 # iOS configuration.
 # ---------------------
 
-using darwin : 6.0~iphone
+using darwin : ${IPHONE_SDKVERSION}~iphone
    : /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv6 -arch armv7 -arch armv7s -fvisibility=hidden -fvisibility-inlines-hidden -DBOOST_AC_USE_PTHREADS -DBOOST_SP_USE_PTHREADS -std=c++11 -stdlib=libc++
    : <striper> <root>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer
    : <architecture>arm <target-os>iphone
    ;
-using darwin : 6.0~iphonesim
+using darwin : ${IPHONE_SDKVERSION}~iphonesim
    : /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -fvisibility=hidden -fvisibility-inlines-hidden -DBOOST_AC_USE_PTHREADS -DBOOST_SP_USE_PTHREADS -std=c++11 -stdlib=libc++
    : <striper> <root>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer
    : <architecture>x86 <target-os>iphone
